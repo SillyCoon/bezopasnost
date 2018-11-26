@@ -9,12 +9,14 @@ namespace EncryctionDES
         static void Main(string[] args)
         {
 
-            string text = "abcdefghi";
+            string text = "Член";
             string key = "1234567";
 
             DES encryptor = new DES(text, key);
 
-            encryptor.FirsStep();
+
+            string encryptedText = encryptor.Encryct();
+            Console.WriteLine(encryptedText);
             Console.ReadKey();
         }
     }
