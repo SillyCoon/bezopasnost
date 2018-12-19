@@ -8,9 +8,10 @@ namespace EncryctionDES
 
         static void Main(string[] args)
         {
-
-            string text = "Член";
-            string key = "1234567";
+            Console.WriteLine("Enter text: ");
+            string text = Console.ReadLine();
+            Console.WriteLine("Enter key: ");
+            string key = Console.ReadLine();
 
             DES encryptor = new DES(text, key);
 

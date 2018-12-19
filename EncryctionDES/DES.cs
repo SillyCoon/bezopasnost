@@ -216,9 +216,9 @@ namespace EncryctionDES
         // Преобразуем ключ до нужной длины
         private void CorrectKey()
         {
-            if (key.Length > KeySize/8)
+            if (key.Length > 7)
             {
-                key = key.Substring(0, KeySize/8);
+                key = key.Substring(0, 7);
             }
             else
             {
